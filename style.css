@@ -80,3 +80,104 @@ html::-webkit-scrollbar-thumb {
     display: none;
 }
 
+@media (max-width:995px){
+    #menu-icon{
+        display: block;
+    }
+    .nav{
+        position: absolute;
+        top:100%;
+        right:0;
+        width:40%;
+        border-left: 3px solid green;
+        border-bottom: 3px solid green;
+        border-bottom-left-radius: 2rem;
+        padding:1rem 3%;
+        background-color: brown;
+        border-top: 0.1 rem solid rgba(0,0,0,0.4);
+        display:none;
+    }
+
+    .nav.active{
+        display: block;
+    }
+    
+    .nav a{
+        display: block;
+        font-size:2rem;
+        margin: 3rem 0;
+    }
+
+    .nav a:hover,
+    .nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5 rem solid aqua;
+    }
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background: green;
+}
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight:700;
+    line-height: 1.3;
+}
+
+span {
+    color:pink;
+}
+
+.home-content h3{
+    font-size:4rem;
+    margin-bottom:1rem;
+
+}
+
+.home-img{
+    border-radius: 50%; 
+}
+
+.home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius:50%;
+    box-shadow: 0 0 25px aqua;
+    cursor: pointer;
+}
+
+.home-img img:hover{
+    transform: scale(1.01);
+    filter: drop-shadow(0 0 25px grey);
+}
+
+.home-content p{
+    font-size:1.8rem;
+    font-weight: 500;
+}
+
+.social-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:4rem;
+    height:4rem;
+    background: transparent;
+    border: 0.2rem solid grey;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: yellow;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+}
