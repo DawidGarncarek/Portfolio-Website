@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2family=Poppins:wght@100;200;300;400;500;600&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size:30px;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+    font-family:"Poppins", sans-serif;
+    color:white;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: red;
+}
+
+html::-webkit-scrollbar-thumb {
+   background: red;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 3rem;
+    background: rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(10px);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+}
+
+.logo {
+    font-size: 3rem;
+    color:blue;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav a {
+    font-size: 1.8rem;
+    color:white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: blue;
+    border-bottom: 3px solid aqua;
+}
+
+.menu-icon {
+    font-size: 3.6rem;
+    color: blue;
+    display: none;
+}
+
