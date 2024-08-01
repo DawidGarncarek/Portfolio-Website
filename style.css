@@ -444,3 +444,25 @@ span {
         width: 100%;
     }
 }
+
+.education {
+    background-color: var(--second-bg-color);
+}
+
+.education .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education .timeline::after {
+    content: '';
+    position: absolute;
+    width:6px;
+    background: rgb(90,64,64);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -2px;
+}
