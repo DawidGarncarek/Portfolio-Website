@@ -41,7 +41,7 @@ html::-webkit-scrollbar-thumb {
    background: var(--main-color);
 }
 
-.header {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -49,10 +49,42 @@ html::-webkit-scrollbar-thumb {
     padding: 3rem 9%;
     background: rgba(0, 0, 0, 0.7);
     filter: drop-shadow(10px);
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+}
+
+.navbar-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.navbar-btn {
+    font-size: 1.3rem;
+    display: none;
+    cursor: pointer;
+    color: var(--main-color);
+    transition: 0.5s ease;
+}
+
+.navbar-btn:hover {
+    color:#161616;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -67,8 +99,17 @@ html::-webkit-scrollbar-thumb {
     transform: scale(1.1);
 }
 
-.navbar a {
-    font-size: 1.8rem;
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin: 0 1rem;
+}
+
+ul li a {
+    font-size: 1.4rem;
     color: var(--text-color);
     margin-left: 4rem;
     font-weight: 500;
@@ -76,8 +117,8 @@ html::-webkit-scrollbar-thumb {
     border-bottom: 3px solid transparent;
 }
 
-.navbar a:hover,
-.navbar a.active {
+ul li a:hover,
+ul li a.active {
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
@@ -720,5 +761,44 @@ footer .copyright {
     }
     .services-container {
         grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width:1020px) {
+    .navbar-btn{
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.7);
+        filter: drop-shadow(10px);
+        border-radius: 0 0 0 15px;
+        width: 200px;
+        top: 89px;
+        right: -100%;
+        padding: 3rem 0;
+        transition: all 0.5s ease-in;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    nav ul.display {
+        right: 0;
+        transition: all 0.9s ease-in-out;
+    }
+
+    ul li a {
+        display: block;
+        margin: 10px;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        margin: 25px;
     }
 }
