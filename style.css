@@ -129,6 +129,22 @@ ul li a.active {
     display: none;
 }
 
+@media (max-width:1435px){
+    ul li a{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:1336px){
+    ul li a{
+        font-size: 1.1rem;
+        margin-left: 2rem;
+    }
+}
+
+
+
+
 @media (max-width:995px){
     #menu-icon{
         display: block;
@@ -166,11 +182,13 @@ ul li a.active {
 }
 
 section{
-    min-height: 100vh;
+    min-height: 60vh;
     padding: 5rem 9% 5rem;
 }
 
 .home{
+    margin-top: 120px;
+    margin-bottom: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -352,6 +370,7 @@ span {
 }
 
 .heading {
+    padding-bottom: 2rem;
     text-align: center;
     font-size: 7rem;
 }
@@ -516,7 +535,6 @@ span {
 }
 
 .education .container::after{
-    content: '\f19d';
     position: absolute;
     width: 27px;
     height: 27px;
@@ -533,6 +551,19 @@ span {
     font-family: "Font Awesome\ 5 Free";
     color: rgb(90,64,64);
 }
+
+.education .container::after{
+    content: '\f19d';
+}
+
+.education .containerSecond::after{
+    content: '\f0b1' !important;
+}
+
+.education .containerThird::after{
+    content: '\f303' !important;
+}
+
 
 .education .left{
     left: 0;
@@ -594,9 +625,23 @@ span {
     font-weight: 600;
 }
 
+.education .content .tag h3{
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding-top: 0.4rem;
+}
+
 .education .content .decs p{
     font-size: 1.3rem;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    color:black;
+}
+
+.education .content .decs .date{
+    font-size: 1.3rem;
     font-weight: 500;
+    padding-top: 0.5rem;
     color:black;
 }
 
