@@ -110,17 +110,34 @@ ul li {
 
 ul li a {
     font-size: 1.4rem;
-    color: var(--text-color);
-    margin-left: 4rem;
+    color: white;
+    margin-left: 2rem;
     font-weight: 500;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 2px;
 }
 
-ul li a:hover,
-ul li a.active {
-    color: var(--main-color);
-    border-bottom: 3px solid var(--main-color);
+ul li a:after {
+    content: '';
+    position: absolute;
+    color:#7b4bb7;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 5px;
+    height: 0.1em;
+    bottom: 0;
+    left: 0;
+    background: currentcolor;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color:#7b4bb7;
 }
 
 #menu-icon {
@@ -138,7 +155,7 @@ ul li a.active {
 @media (max-width:1336px){
     ul li a{
         font-size: 1.1rem;
-        margin-left: 2rem;
+        margin-left: 1.2rem;
     }
 }
 
@@ -795,13 +812,26 @@ span {
 
 .footer ul li a{
     color: black;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease;
+    position: relative;
 }
 
-.footer ul li a:hover {
-    border-bottom: 3px solid black;
+.footer ul li a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
 }
+
+.footer ul li a:hover:before {
+    visibility: visible;
+    height: 2px;
+    width: 100%;
+  }
 
 .footer ul li {
     display: inline-block;
