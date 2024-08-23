@@ -1,12 +1,12 @@
 import './style.css'
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    const interBubble = document.querySelector<HTMLDivElement>('.interactive')!;
     let curX = 0;
     let curY = 0;
     let tgX = 0;
     let tgY = 0;
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const interBubble = document.querySelector<HTMLDivElement>('.interactive')!;
 
     function move() {
         curX += (tgX - curX) / 20;
