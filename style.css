@@ -1235,7 +1235,7 @@ textarea::placeholder {
 .footer .social a:hover {
     transform: scale(1.2)translateY(-5px);
     background: black;
-    color: var(--main-color);
+    color: rgb(69, 162, 158);
 }
 
 .footer ul {

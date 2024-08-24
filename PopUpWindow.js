@@ -2,7 +2,7 @@ const textMap = {
     "element1": "Z językiem C#, mam styczność od początku studiów, który jest głównym językiem stosowanym na mojej uczelni. Posłużył mi w dużej mierze do napisania mojej aplikacji na prace inżynierską.",
     "element2": "AutoCad oraz Inventor używałem do tworzenia prostych modeli, głównie 3D. Mogę też tutaj dodać, że dość szybko pojmowałem wiedzę z obu programów i szybko tworzyłem proste modele takie jak łożysko.",
     "element3": "Z CSS mam styczność już od technikum i używam go praktycznie cały czas do urozmaicenia oraz ulepszania interfejsów swoich projektów czy aplikacji.",
-    "element4": "To samo tyczy się z HTML, który jest nieodzownym elementem tworzenia moich projetków.",
+    "element4": "To samo co w przypadku CSS tyczy się z HTML, który jest nieodzownym elementem tworzenia moich projetków i mam z nim ciągłą styczność.",
     "element5": "JavaScript używam do tworzenia prostych skryptów, ulepszających działanie, niektórych elementów w moich aplikacjach oraz do pomocy przy tworzeniu animacji na stronach.",
     "element6": "Photoshopa używam sporadycznie, zwykle do prostej obróbki obrazów czy zdjęć, które chce umieścić w swoich projektach.",
     "element7": "Excel znam, nie używam zbyt często, ale wiem, że przydaje się dobre obeznanie z nim, czego doświadczyłem w poprzedniech pracy, gdzie wiele plików danych było w ten sposób eksportowane.",
