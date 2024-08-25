@@ -773,7 +773,7 @@ span {
 .progress-bar-text{
     padding-top:20px;
     font-size:12px;
-    font-weight: bold;
+    font-weight: 500;
     color:rgb(7, 42, 55);
 }
 
@@ -1162,6 +1162,106 @@ span {
     }
 }
 
+
+.projects-box{
+    height: 400px;
+    border-radius: 3rem;
+    border: 2px solid var(--main-color);
+    transition: 0.5s ease;
+}
+
+.projects-box .projects-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: center;
+    align-items: baseline;
+    padding: 5em;
+    position: relative;
+    padding-bottom: 40px; 
+}
+
+.projects-info h4{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.projects-info p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    max-height: 100px;
+    margin: auto;
+}
+
+.projects-container {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.forward {
+    padding-right:20px;
+    position: absolute;
+    right: 10px; 
+    bottom: -160px;
+}
+
+.forward .logo-projects i {
+    font-size: 24px; 
+    color: #01d2bc; 
+}
+
+.forward a i{
+    transition: 0.3s ease;
+}
+
+.forward a i:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1670px) {
+    .projects-info p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1510px) {
+    .projects-info p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1392px) {
+    .projects-info p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .projects-info p {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .projects-info p {
+        font-size: 1.4rem;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .projects-container {
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 5rem;
+    }
+}
+
 .contact h2 {
     margin-bottom: 3rem;
     color: white;
@@ -1283,6 +1383,18 @@ footer .copyright {
     color: black;
 }
 
+@media(max-width:1724px) {
+    .service-info p{
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width:1304px) {
+    .service-info p{
+        font-size: 1.2rem;
+    }
+}
+
 @media(max-width:1200px) {
     html{
         font-size: 55%;
@@ -1292,7 +1404,18 @@ footer .copyright {
         grid-template-columns: repeat(1, 1fr);
         margin: 0 5rem;
     }
+
+    .service-info p{
+        font-size: 1.6rem;
+    }
 }
+
+@media(max-width:550px) {
+    .service-info p{
+        font-size: 1.2rem;
+    }
+}
+
 
 @media(max-width:991px) {
     .header {
@@ -1371,3 +1494,13 @@ footer .copyright {
     }
 }
 
+
+.back a i{
+    padding:30px;
+    padding-left:50px;
+    transition: 0.3s ease;
+}
+
+.back a i:hover {
+    transform: scale(1.1);
+}
