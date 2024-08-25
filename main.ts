@@ -1,4 +1,4 @@
-import './style.css'
+import 'style.css'
 
     let curX = 0;
     let curY = 0;
