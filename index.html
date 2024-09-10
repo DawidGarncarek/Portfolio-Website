@@ -85,7 +85,7 @@
                     <a href="#"><i class="fa-brands fa-github"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                <a href="#" class="button">Zatrudnij mnie</a>
+                <a href="#contact" class="button">Zatrudnij mnie</a>
             </div>
         </section>
 
@@ -396,16 +396,16 @@
         </section>
 
         <section class="contact" id="contact">
-            <h2 class="heading">Kontakt do <span>mnie</span></h2>
-            <form action="">
+            <h2 class="heading">Kontakt</h2>
+            <form action="#">
                 <div class="input-box">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" placeholder="E-mail" required>
-                    <input type="Number" placeholder="Phone Number" required>
-                    <input type="text" placeholder="Subject">
+                    <input type="text" name="name" placeholder="Imię"  id="name" required>
+                    <input type="email" placeholder="E-mail" id="email" required>
+                    <!-- <input type="Number" placeholder="Phone Number" required> -->
+                    <input type="text" placeholder="Temat" id="subject" required>
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Twoja wiadomość"></textarea>
-                <input type="submit" value="Send Massage" class="button">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Twoja wiadomość" required></textarea>
+                <input type="submit" value="Wyślij wiadomość" class="button">
             </form>
         </section>
 
@@ -434,5 +434,8 @@
         <script src="script.js"></script>
         <script src="PopUpWindow.js"></script>
         <script type="module" src="main.ts"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="contactscript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
 </html>
